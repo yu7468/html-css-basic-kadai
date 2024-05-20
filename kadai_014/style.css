@@ -1,3 +1,32 @@
-@charset "UTF-8";
-/* CSS Document */
+html {
+  font-size: 20px;
+}
 
+body {
+  text-align: center;
+  font-family: sans-serif;
+  font-family: "Arial", "Meiryo", sans-serif;
+}
+.top {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 1.2em;
+  text-shadow: 2px 2px 3px pink;
+  border-bottom: solid 3px rgb(115, 115, 114);
+}
+
+.text-pink {
+  color: rgb(255, 192, 203);
+}
+
+.text-blue {
+  color: skyblue;
+}
+
+#parent p {
+  font-weight: bold;
+}
