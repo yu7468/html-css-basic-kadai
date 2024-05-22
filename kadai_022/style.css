@@ -1,0 +1,97 @@
+/* 余白をクリア */
+h1,
+p,
+body {
+  margin: 0px;
+}
+
+/* 内容のフォントサイズ */
+p,
+a {
+  font-size: 20px;
+}
+
+/* タイトルの背景設定 */
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+/* タイトルのフォントカラー */
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+main {
+  margin: 10px 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* コンテンツの設定 */
+.contents {
+  border: 3px solid rgb(238, 204, 204);
+  flex: basis 25%;
+  padding: 10px 15px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236, 122, 122);
+}
+
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+.contents img {
+  margin: 10px 0;
+  width: 70%;
+}
+
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+/* マウスカーソルが乗った時の色 */
+footer a:hover {
+  color: rgb(245, 178, 168);
+}
+
+/* 訪問済みリンク色 */
+footer a:visited {
+  color: rgb(193, 234, 251);
+}
+
+/* 768px以下の画面幅に適用されるスタイル */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  #parent {
+    display: flex;
+    flex-direction: column;
+  }
+}
